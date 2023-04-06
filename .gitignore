@@ -1,2 +1,3 @@
 env/
 .idea/
+merchex/db.sqlite3
