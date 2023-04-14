@@ -3,7 +3,9 @@
 
 {% block content %}
 
-<h1>Hello les mousaillons !</h1>
+<h1>Groupes :</h1>
+
+<a href="{% url 'band-create' %}">Créer un nouveau groupe</a>
 {% comment %} <p>J'ai {{ bands|length }} groupes préférés.</p>
 <p>
     J'ai 
@@ -16,10 +18,13 @@
     {% endif %}
         groupes préférés.
 </p> {% endcomment %}
-<p>Mes groupes préférés sont :</p>
 <ul>
     {% for band in bands %}
-    <li>{{ band.name|upper }}</li>
+    <li>
+        <a href="{% url 'band-detail' band.id %}">{{ band.name }}</a>
+        - <a href="{% url 'band-update' band.id %}">[modifier]</a>
+        - <a href="{% url 'band-delete' band.id %}">[supprimer]</a>
+    </li>
     {% endfor %}
 </ul>
 
