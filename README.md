@@ -5,7 +5,7 @@
 
 Ce site correspond à ma toute première utilisation de Django. Le projet n'est pas abouti, et m'a simplement servi d'exemple pour suivre le cours Django Débutant d'OpenClassrooms.  
 Les fonctionnalités consistent en l'implémentation d'opérations CRUD (Create, Read, Update, Delete) sur un ou deux modèles. Le but était de découvrir les bases du fonctionnement de Django.  
-Pour un projet plus abouti réalisé avec Django, consultez plutôt <>.  
+Pour un projet plus abouti réalisé avec Django, consultez plutôt [LitReview](https://github.com/TheoSntt/litreview).  
 
 ## Mise en place et exécution en local de l'application
 
